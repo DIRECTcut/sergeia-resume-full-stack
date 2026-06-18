@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Transcription"
+  short_description: "Normalize messy transcript text."
+  default_prompt: "Use $clean-transcription to turn this rough transcript into clean readable text."

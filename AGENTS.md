@@ -1,0 +1,10 @@
+## Agent guidelines
+
+Dont make far-fetched assumptions - ask user when in doubt, unless directly instructed otherwise
+
+When a required local dependency or helper library is missing, the agent may install it into an isolated environment (for example, a Python `venv`) instead of requiring a system-wide install. Prefer isolated, reversible installs and avoid changing global system packages unless the user explicitly asks for that.
+
+Credential handling:
+- Do not open `.env` files or print secret values unless the user explicitly asks for that exact content.
+- Prefer passing credentials through existing environment files or shell sourcing without echoing values.
+- Do not commit secrets; keep real credentials in ignored local `.env` files and commit only placeholder `.env.example` files.

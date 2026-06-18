@@ -1,2 +1,4 @@
 # Word temporary file
 ~$*
+.env
+tools/hr-breaker/
