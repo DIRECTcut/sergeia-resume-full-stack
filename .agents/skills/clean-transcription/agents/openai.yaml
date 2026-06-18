@@ -1,4 +1,4 @@
 interface:
   display_name: "Clean Transcription"
-  short_description: "Normalize messy transcript text."
-  default_prompt: "Use $clean-transcription to turn this rough transcript into clean readable text."
+  short_description: "Turn messy transcripts into short actionable playbooks."
+  default_prompt: "Use $clean-transcription to turn this rough transcript into a short, actionable Markdown playbook in transcripts/cleaned. Split it into short sections, preserve the practical takeaways, and ask a short clarifying question if the source or output naming is unclear."

@@ -1,3 +1,7 @@
+## Repo purpose
+
+Refer to `README.md`.
+
 ## Agent guidelines
 
 Dont make far-fetched assumptions - ask user when in doubt, unless directly instructed otherwise

@@ -1,85 +1,114 @@
 ---
 name: clean-transcription
-description: Clean up rough transcript text into readable prose while preserving meaning and speaker intent. Use when Codex needs to normalize messy transcriptions, remove filler noise, fix punctuation and casing, or lightly structure spoken text without rewriting the substance.
+description: Turn rough transcript text into a short, actionable Markdown playbook saved in `transcripts/cleaned`, preserving the speaker's practical advice while removing noise and weak structure.
 ---
 
 # Clean Transcription
 
 ## Overview
 
-[TODO: 1-2 sentences explaining what this skill enables]
+Use this skill when transcript text is messy but the goal is not a literal transcript. The output should be a concise Markdown playbook that captures practical takeaways, split into short sections, written for action rather than narration.
 
-## Structuring This Skill
+## What To Produce
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+- Create a new `.md` file in `transcripts/cleaned`.
+- Distill the transcript into practical takeaways only.
+- Keep it short, but still full enough to be useful without reopening the source transcript.
+- Structure it with short section headings.
+- Prefer headings like `Resume`, `Search`, `Outreach`, `Interviews`, `Routine`, `Traps`.
+- Avoid verbose headings like `Writing a resume` or `How to search for jobs effectively`.
+- Make the document read like a playbook.
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" -> "Reading" -> "Creating" -> "Editing"
-- Structure: ## Overview -> ## Workflow Decision Tree -> ## Step 1 -> ## Step 2...
+## Workflow
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" -> "Merge PDFs" -> "Split PDFs" -> "Extract Text"
-- Structure: ## Overview -> ## Quick Start -> ## Task Category 1 -> ## Task Category 2...
+### 1. Check For Ambiguity
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" -> "Colors" -> "Typography" -> "Features"
-- Structure: ## Overview -> ## Guidelines -> ## Specifications -> ## Usage...
+Ask the user a short question if any of these are unclear:
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" -> numbered capability list
-- Structure: ## Overview -> ## Core Capabilities -> ### 1. Feature -> ### 2. Feature...
+- which transcript to use
+- what to name the output file
+- whether the user wants multiple transcripts merged
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+If those points are clear from context, proceed without asking.
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+### 2. Read The Transcript
 
-## [TODO: Replace with the first main section based on chosen structure]
+- Read the transcript from the user-provided text or source file.
+- Ignore platform boilerplate, timestamps, filler words, repeated fragments, and transcription artifacts.
+- Preserve the actual advice, priorities, caveats, and examples.
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+### 3. Extract Practical Takeaways
 
-## Resources (optional)
+- Focus on decisions, tactics, routines, warnings, heuristics, and examples that can guide action.
+- Remove chatter, rhetorical repetition, and off-topic digressions.
+- Convert long spoken explanations into compact bullets.
+- Keep the speaker's intent, but rewrite for clarity and usefulness.
 
-Create only the resource directories this skill actually needs. Delete this section if no resources are required.
+### 4. Shape It As A Playbook
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+- Start with a short title that matches the topic.
+- Split the content into clear sections based on the transcript's themes.
+- Use concise bullets under each section.
+- Make every bullet actionable, specific, or evaluative.
+- Prefer direct wording over explanation-heavy prose.
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+### 5. Save The Output
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+- Write the final Markdown file into `transcripts/cleaned`.
+- Use a filename derived from the source transcript when possible.
+- If the source is `transcripts/raw/topic_name.txt`, default to `transcripts/cleaned/topic_name.md`.
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Codex for patching or environment adjustments.
+## Style Rules
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Codex's process and thinking.
+- Short headings only.
+- Actionable wording first.
+- No transcript-style speaker labels unless the user explicitly asks for them.
+- No long intro.
+- No fluffy conclusion.
+- No attempt to preserve exact spoken phrasing when a clearer rewrite is better.
+- Keep the final result compact enough to scan quickly.
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+## Output Shape
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Codex should reference while working.
+Use this pattern unless the transcript strongly requires a different split:
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Codex produces.
+```md
+# Topic
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
+## Mindset
 
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
+- ...
 
----
+## Resume
 
-**Not every skill requires all three types of resources.**
+- ...
+
+## Search
+
+- ...
+
+## Outreach
+
+- ...
+
+## Interviews
+
+- ...
+
+## Routine
+
+- ...
+
+## Traps
+
+- ...
+```
+
+Not every section is required. Include only sections supported by the transcript.
+
+## Done Criteria
+
+- A new file exists in `transcripts/cleaned`.
+- The document is short, readable, and actionable.
+- Headings are compact.
+- The content reads like a playbook, not a cleaned verbatim transcript.
