@@ -2,8 +2,9 @@
 
 ## Goal
 
+- Main goal - rise to the top of *Sales Navigator* (Linkedin's AI)
 - Optimize LinkedIn for inbound recruiter outreach, not for applying to jobs manually.
-- Track `linkedin.com/sales/ssi` as a proxy for search visibility, but treat it as an imperfect signal rather than the only metric.
+- `linkedin.com/sales/ssi` - check frequently, changes are reflected in 3 days. Target rating - **60+**
 - Use profile analytics too, especially profile views, search appearances, and post impressions.
 
 ## SSI
@@ -11,6 +12,94 @@
 - Aim to get above your market baseline first; the speaker saw weak inbound at around `35` SSI and much stronger inbound above `50`.
 - Treat the four SSI buckets differently: profile completeness matters most once, content and relationships need ongoing maintenance, and advanced search matters less if time is limited.
 - Expect delayed feedback. SSI changes can take a few days to update after profile edits.
+
+There are 4 components to SSI
+
+### Baseline ("establish your professional brand")
+
+Fill **ALL** profile fields filled, no matter how cringe
+1. The header profile image present (make once and forget about it)
+	1. dont fill with info like phone/email
+	2. fill with frameworks, langs etc
+2. Photo - best if the photo is from a conference. Semi-casual also works
+3. `Open to work` badge - must have
+	1. Enable all titles that are synonymous to yours, as many as you can
+	2. Enable all employment types (remote, onsite, hybrid)
+	3. Location - large hubs (Barcelona, Berlin, Dubai, Warsaw) - these are likely to appear in HR"s filters. This does notappear on the profile, just a filter for incoming jobs. Try setting 5 locations, see conversion, change to others - repeat
+4. Name - can add emoji - bots will copy it over in the message when reaching out
+5. University, Last place of work - only unis that have a profile in linkedin
+6. Custom buttons
+	1. Add WA button `https://wa.com/+549111...
+	2. Mb others - portfolio, blog, etc.
+7. About - most important info in first 4 lines, can add more (will be hidden under a spoiler)
+8. Top skills - 5 top langs/frameworks
+9. User custom profile url, ideally `name-surname`, if occupied - add job title
+
+####  Services
+
+This is a new feature, like Upwork for LinkedIn
+Add services - omit prices, `Contact for pricing`
+Don't farm reviews, etc. We are adding services just for profile completeness
+
+#### Featured
+
+Add if have something coll to show off (cool position, viral post, cool cert/hackaton)
+
+#### Activity
+
+Need to have smth here, **TODO**
+
+#### Experience
+
+Same as in the resume, plus add all skills via the dropdown menu, duplicate with text in one line
+
+#### Skills
+
+Language, frameworks first
+Add **everything** in descending order of importance. Limit is 100. The higher the skill up top, the more endorsements it gets
+
+#### Media
+
+Fill for every company, at least put the website there. If do not exist, make screenshots of the product and put there
+
+#### Certifications
+
+First 2 are most important (shown in the profile). Before taking a course - make sure they have a LinkedIn integration (coursera, aws, udemy do have one).
+If dont have any - try to obtain. As last ditch effort - can add someone else's cert ID - sometimes HRs dont check this
+
+##### More tips
+
+Everywhere, where we have a selector for top skills, **and** a text field (e,g. places of work) - add the skills, and duplicate via text (may add more in the text section) - important for parsers/ATS, which might be bugged
+
+### Interact With The Platform
+
+#### Endorsements
+Go to groups, post your linkedin url. Endorse others - 1-2 words (`Awesome`, `Cool`) is enough here 
+#### Reviews / Recomendations
+Engage with people, aggree on mutual recommendations. These may end up in ATS
+#### Publications
+Can add anything here - there is not validation. Link to tg, other peoples' publications - anything goes
+#### Honors & Awards
+Add any hackathon - noone will check
+#### Linkedin skill checks
+Ignore, unless have free time (lol), conversion impact is minimal
+
+#### Interests
+Subscribe to past workplaces, to frameworks etc
+
+#### Creator Mode
+Enable, it reminds you to interact with the platform at least
+
+### Find The Right People
+
+Get sales navigator sub, allows to see the UI through which the recruiters see your profile
+There are rumours that SSI might be higher if you use Sales Navigator more often (e.g. every day) - unconfirmed, but likely
+
+**Dont** use bots - might get profile banned. Actually go every day from different devices and interact (**TODO**:  research OpenAI/ other PC use automation)
+
+### Engage With Insights
+
+**Dont** leave the feed empty! Make posts, they can be reposted from the internet, or hire a copyrighter/chatgpt
 
 ## Profile
 
