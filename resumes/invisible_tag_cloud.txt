@@ -1,0 +1,1 @@
+PHP|JavaScript|HTML|CSS|jQuery|Apache|Nginx|Git|WordPress|Joomla|SSH|Google Analytics|Facebook Pixel|APIs|Databases|Messaging Brokers|Docker|Linux|Ubuntu|Symfony|Laravel|AWS|GCP|Azure|PHP 8|Symfony 7|React|API Platform|Mirth Connect|HL7|FHIR|CI/CD|Kubernetes|Terraform|GitLab|MySQL|PostgreSQL|MongoDB|Redis|Elasticsearch|REST|GraphQL|Jenkins|TypeScript|Python

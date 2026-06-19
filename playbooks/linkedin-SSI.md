@@ -143,10 +143,10 @@ There are rumours that SSI might be higher if you use Sales Navigator more often
 
 ## Routine
 
-- First week: complete the profile, set market location, enable `Open to Work`, and define top skills.
-- Next `4-6` weeks: add `10-15` relevant connections per day until you pass `500+`.
-- From the start: publish one post per week and actively drive early likes and comments.
-- Review SSI and profile analytics every few days instead of reacting daily.
+- [x] First week: complete the profile, set market location, enable `Open to Work`, and define top skills.
+- [x] Next `4-6` weeks: add `10-15` relevant connections per day until you pass `500+`.
+- [ ] From the start: publish one post per week and actively drive early likes and comments.
+- [ ] Review SSI and profile analytics every few days instead of reacting daily.
 
 ## Traps
 
