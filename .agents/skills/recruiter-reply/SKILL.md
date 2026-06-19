@@ -16,6 +16,8 @@ The default goal is:
 - interested but not overcommitted
 - written in the same language as the inbound message
 
+Read [playbooks/salary-or-rate-negotiation.md](/home/user/repos/sergeia-resume-full-stack/playbooks/salary-or-rate-negotiation.md) when the recruiter asks about salary expectations, compensation, or hourly rate.
+
 ## Workflow
 
 ### 1. Identify Intent
@@ -30,22 +32,38 @@ Figure out what the user likely wants:
 
 If the user's preferred intent is unclear, default to a short, positive reply that asks for more details.
 
-### 2. Match Language
+### 2. Answer Every Question
+
+- If the recruiter asked multiple questions, answer all of them in the reply.
+- Do not ignore earlier questions just because the final question is about compensation.
+- Keep answers concise, but still cover every prompt the recruiter included.
+- If one question requires more detail than fits comfortably in a short reply, answer briefly and offer to expand.
+
+### 3. Match Language
 
 - Detect the language of the recruiter's message from the text itself.
 - Write the reply in that same language.
 - If the message mixes languages, prefer the language used in the greeting and main body.
 - Only switch languages if the user explicitly asks.
 
-### 3. Match Tone
+### 4. Match Tone
 
 - Mirror the recruiter's formality level.
 - Keep the reply natural and human.
 - Do not sound overeager, robotic, or overly polished.
 
-### 4. Keep It Short
+### 5. Handle Salary Or Rate Questions
+
+- When asked for salary expectations or hourly rate, never give a number first.
+- Use the guidance in `playbooks/salary-or-rate-negotiation.md`.
+- Ask for the employer's range, budget, or compensation band instead.
+- Keep the answer calm and matter-of-fact, not evasive.
+
+### 6. Keep It Short
 
 Default to `1-3` sentences.
+
+If the recruiter asked several concrete questions, it is acceptable to go longer than `3` sentences so long as the reply stays compact and answers everything.
 
 Prefer:
 
@@ -53,7 +71,13 @@ Prefer:
 - brief signal of interest or polite decline
 - one next-step question if continuing
 
-### 5. Avoid Weak Output
+### 7. Save The Result
+
+- Write the final reply into `./tmp`.
+- Use a short descriptive filename based on the company, recruiter, or scenario when possible.
+- Prefer markdown files that contain a fenced `text` block.
+
+### 8. Avoid Weak Output
 
 Do not:
 
@@ -70,7 +94,8 @@ Use this structure unless the user asks for something else:
 ```text
 Greeting + thanks.
 Brief interest signal or polite decline.
-Short next-step question if continuing.
+Answer each recruiter question in compact form.
+Ask for the employer's range instead of giving a salary number first.
 ```
 
 ## Examples
@@ -100,9 +125,22 @@ Hi [Name], thanks for reaching out. I appreciate it, but this is not something I
 Hi [Name], thanks for reaching out. I'd be glad to learn more. Could you share the role details, location, and compensation range?
 ```
 
+### Multiple questions, including rate
+
+```text
+Hi [Name], thanks for sharing the details. The role sounds interesting and relevant to my background.
+
+I've worked on end-to-end features, from problem framing and technical design through implementation, testing, deployment, and production follow-up. I'm strongest on the backend and application architecture side, though I've also worked extensively with React and TypeScript on the frontend. I've worked on systems that needed to scale and handle near real-time data, with the main challenges usually being performance, observability, and database bottlenecks. I also have experience designing APIs and working with PostgreSQL, including data modeling and query optimization.
+
+When requirements are unclear or changing, I usually work closely with product and design to reduce ambiguity, align on tradeoffs, and move iteratively. As for rate, I'd prefer to first understand the range you have budgeted for the role and the contract setup.
+```
+
 ## Done Criteria
 
 - The reply matches the recruiter's language.
 - The text sounds natural.
-- The message is short unless the user asked for more.
+- Every recruiter question was answered.
+- Salary or rate questions do not get a number-first answer.
+- The message is short unless answering all questions requires more space.
 - No unsupported claims were added.
+- A file with the drafted reply exists in `./tmp`.
