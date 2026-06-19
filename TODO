@@ -1,0 +1,15 @@
+## Now
+- [x] Complete `playbooks/linkedin-SSI.md`
+- [ ] Boost LinkedIN: set up process to increase and maintain SSI (see `playbooks/linkedin-SSI.md`)
+- [ ] Investigate market, pick target stack(s). Better focus on a single stack
+- [ ] Create a pre-set number of resumes fine tuned for relevant tech stacks
+- [ ] Add AI to resume/Linkedin
+- [ ] Research advanced ATS resume finetuning (metadata, hidden text, etc). Set up CI for resumes
+- [ ] Complete `playbooks/salary-or-rate-negotiation.md`
+
+## Later
+
+- [ ] Fine tune resumes to vacancies automatically  (use https://github.com/btseytlin/hr-breaker or alternative)
+- [ ] Have resumes fine tuned to industries
+- [ ] Create website, add to linkedin (see `linkedin-SSI.md`)
+- [ ] Research `https://evyai.com/` for automatic Linkedin SSI farm

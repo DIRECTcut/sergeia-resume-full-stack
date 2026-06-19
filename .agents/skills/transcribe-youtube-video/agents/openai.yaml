@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transcribe YouTube Video"
+  short_description: "Save a YouTube transcript to transcripts/<video-id>.txt."
+  default_prompt: "Use $transcribe-youtube-video to transcribe the provided YouTube video URL via the proven Tactiq browser flow, extract the rendered transcript rows from the result page, and save the plain text as transcripts/<video-id>.txt."

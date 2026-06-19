@@ -33,8 +33,7 @@ If those points are clear from context, proceed without asking.
 
 ### 2. Read The Transcript
 
-- Read the transcript from the user-provided text or source file.
-- Ignore platform boilerplate, timestamps, filler words, repeated fragments, and transcription artifacts.
+- Read the transcript from the user-provided text or source file. Read in full, chunk if file is too big. Dont omit/miss sections
 - Preserve the actual advice, priorities, caveats, and examples.
 
 ### 3. Extract Practical Takeaways

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run Hr Breaker"
+  short_description: "Set up and run the repo-local hr-breaker wrapper."
+  default_prompt: "Use $run-hr-breaker to set up the repo-local hr-breaker wrapper, verify the real resume and vacancy paths in this repository, and run the optimization command without printing secrets."

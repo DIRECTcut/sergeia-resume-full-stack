@@ -2,6 +2,13 @@
 
 Refer to `README.md`.
 
+## Repo structure
+
+- `playbooks` - md playbook files for handling specific aspects of job search
+- `resumes` - concrete resume artifacts/templates. Mostly treat as disposable artifacts
+- `AGENTS.md` - this document
+- `README.md` - high level project description
+
 ## Agent guidelines
 
 Dont make far-fetched assumptions - ask user when in doubt, unless directly instructed otherwise

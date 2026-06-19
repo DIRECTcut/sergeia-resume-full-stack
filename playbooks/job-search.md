@@ -47,6 +47,7 @@
 
 ## Cover Letter
 
+- Every application must contain a cover letter if possible.
 - Keep one reusable master version.
 - Customize only when a company is unusually strong or strategic.
 - Do not spend large amounts of time per application on cover letters.
