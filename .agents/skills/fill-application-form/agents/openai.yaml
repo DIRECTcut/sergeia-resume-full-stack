@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fill Application Form"
+  short_description: "Draft and save field-by-field application answers."
+  default_prompt: "Use $fill-application-form to read the provided pasted form or link, extract every application question, ground the answers in this repository, mark unsupported fields as Needs user confirmation, and save the result as a .txt file in tmp/application-forms."

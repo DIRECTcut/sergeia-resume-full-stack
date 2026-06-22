@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Cover Letter"
+  short_description: "Draft and save a tailored plain-text cover letter."
+  default_prompt: "Use $create-cover-letter to read the provided vacancy input, ground the draft in this repository's resumes and playbooks, refuse if the vacancy cannot be read, and save the final cover letter as a .txt file in tmp/cover-letters."
