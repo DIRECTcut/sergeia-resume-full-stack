@@ -2,6 +2,7 @@
 - LinkedIn: https://www.linkedin.com/in/sergei-afonchenko
 - Phone number (Argentina): +54 911 2695 1443
 - Current Location: Buenos Aires, Argentina
+- Postal Code: C1414BFJ
 - Phone number (Georgia): TBD
 - Email: sergei.afonchenko42@gmail.com
 - Website/portfolio: TBD

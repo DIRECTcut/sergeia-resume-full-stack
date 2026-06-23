@@ -1,2 +1,0 @@
-- Linkedin
-- `https://www.globallogic.com/career-search-page/`

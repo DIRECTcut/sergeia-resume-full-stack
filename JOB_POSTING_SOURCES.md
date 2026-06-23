@@ -1,0 +1,4 @@
+- Linkedin
+- https://www.globallogic.com/career-search-page/
+- https://jobs.80000hours.org/
+- https://devlist.co/search
