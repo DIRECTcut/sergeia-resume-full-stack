@@ -16,6 +16,10 @@ My goals:
 
 LinkedIn: `https://www.linkedin.com/in/sergei-afonchenko`
 
+# Tools
+
+- `tools/linkedin-feed-minimal` - Stylus userstyle for a minimal LinkedIn feed focused on engagement controls
+
 # Download Resume
 
 Open `https://directcut.github.io?file=pdf` or `https://directcut.github.io?file=docx` in the browser

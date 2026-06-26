@@ -1,0 +1,47 @@
+/* ==UserStyle==
+@name           LinkedIn Feed Minimal
+@namespace      sergeia-resume-full-stack
+@version        0.2.0
+@description    Keep LinkedIn feed cards reduced to engagement controls; hide many promoted cards.
+==/UserStyle== */
+
+@-moz-document regexp("https://www\\.linkedin\\.com/feed/?") {
+  /* Hide the current right-rail module, which contains both
+     "Today's puzzles" and "Add to your feed" on the inspected feed. */
+  aside[aria-label="Aside"] > div {
+    display: none !important;
+  }
+
+  #ads-container {
+    display: none !important;
+  }
+
+  /* Hide the "promoted" cards we can identify from a visible CTA. */
+  main [role="listitem"]:has(a[aria-label="Download"]) {
+    display: none !important;
+  }
+
+  /* Collapse normal feed items to the last row, which currently contains
+     reaction counts and the action buttons. */
+  main [role="listitem"]:has(button[aria-label^="Reaction button state"]) > div:first-child > div:first-child > :not(:last-child) {
+    display: none !important;
+  }
+
+  /* Tighten spacing around the remaining row. */
+  main [role="listitem"]:has(button[aria-label^="Reaction button state"]) > div:first-child > div:first-child {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: 0 !important;
+  }
+
+  main [role="listitem"]:has(button[aria-label^="Reaction button state"]) > div:first-child > div:first-child > :last-child {
+    margin-top: 0 !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  /* Hide empty spacer siblings that LinkedIn leaves after the card. */
+  main [role="listitem"]:has(button[aria-label^="Reaction button state"]) > div:last-child {
+    display: none !important;
+  }
+}

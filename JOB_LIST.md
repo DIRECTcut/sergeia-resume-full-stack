@@ -1,0 +1,4 @@
+- [ ] https://app.rvc.global/vacancy/view/alpaca-markets-backend-developer-415757?utm_source=telegram&utm_medium=bot&utm_campaign=matched_vacancy&utm_content=details_contacts_full_description
+- [ ] https://app.rvc.global/vacancy/view/ggr-global-senior-go-developer-414220?utm_source=telegram&utm_medium=bot&utm_campaign=matched_vacancy&utm_content=contacts_full_description
+- [ ] https://job-boards.greenhouse.io/alpaca/jobs/6030949004
+- [ ] https://app.rvc.global/vacancy/view/faceapp-senior-go-developer-416235?utm_source=telegram&utm_medium=bot&utm_campaign=matched_vacancy&utm_content=contacts_full_description
