@@ -23,3 +23,7 @@ Credential handling:
 Use `.venv` for installation of python packages. `.venv` is git ignored. For other languages/tools, use same pattern where appropriate.
 
 Keep the repo structured. If new information comes in that does not fit into the existing structure, it needs to be expanded/updated. Confirm your intention with the user in this case before proceeding.
+
+## Explicit approvals
+
+User explicitly approves `hr-breaker` runs that send resume to external LLM provider, like: `scripts/run-hr-breaker.sh "resumes/Sergei_Afonchenko_Senior_Full_Stack_Developer.pdf" "tmp/fundraise-up-senior-fullstack-developer.md" en`. No additional approval is required.

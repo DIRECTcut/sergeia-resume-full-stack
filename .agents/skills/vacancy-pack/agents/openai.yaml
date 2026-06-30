@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacancy Pack"
+  short_description: "Build a bundled local artifact pack for one vacancy."
+  default_prompt: "Use $vacancy-pack to read the provided vacancy source, extract the visible application fields, choose the relevant resume, generate the cover letter and application-answer draft, and save the full bundle into tmp/vacancy-packs/<company-role>/ without submitting the application."

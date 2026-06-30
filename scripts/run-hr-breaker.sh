@@ -11,7 +11,7 @@ HR_BREAKER_DIR="$ROOT_DIR/tools/hr-breaker"
 ROOT_ENV_FILE="$ROOT_DIR/.env"
 RESUME_FILE="$1"
 VACANCY_FILE="$2"
-LANGUAGE="${3:-ru}"
+LANGUAGE="${3:-en}"
 
 resolve_path() {
   local input_path="$1"

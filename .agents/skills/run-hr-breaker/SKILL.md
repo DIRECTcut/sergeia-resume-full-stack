@@ -22,7 +22,7 @@ Confirm the task includes:
 
 - a source resume PDF
 - a vacancy file, usually Markdown
-- an optional language code, defaulting to `ru`
+- an optional language code, defaulting to `en`
 
 If a path is unclear, inspect the repo and use the actual file path instead of guessing.
 
@@ -54,7 +54,7 @@ scripts/run-hr-breaker.sh "<resume-pdf>" "<vacancy-file>" [language]
 Example from this repo:
 
 ```bash
-scripts/run-hr-breaker.sh "resumes/Sergei Afonchenko - Backend Developer.pdf" "tmp/ggr-global-senior-go-developer.md" ru
+scripts/run-hr-breaker.sh "resumes/Sergei Afonchenko - Backend Developer.pdf" "tmp/ggr-global-senior-go-developer.md" en
 ```
 
 Notes:

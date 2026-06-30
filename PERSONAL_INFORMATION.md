@@ -6,3 +6,5 @@
 - Phone number (Georgia): TBD
 - Email: sergei.afonchenko42@gmail.com
 - Website/portfolio: TBD
+- Telegram: @DIRECTcut
+- Daily crypto user
