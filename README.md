@@ -19,6 +19,7 @@ LinkedIn: `https://www.linkedin.com/in/sergei-afonchenko`
 # Tools
 
 - `tools/linkedin-feed-minimal` - Stylus userstyle for a minimal LinkedIn feed focused on engagement controls
+- `tools/linkedin-salary-helper` - Tampermonkey script that opens a salary Google search from the current LinkedIn job page
 
 # Download Resume
 
