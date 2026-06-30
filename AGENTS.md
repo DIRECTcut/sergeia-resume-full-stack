@@ -21,3 +21,5 @@ Credential handling:
 - Do not commit secrets; keep real credentials in ignored local `.env` files and commit only placeholder `.env.example` files.
 
 Use `.venv` for installation of python packages. `.venv` is git ignored. For other languages/tools, use same pattern where appropriate.
+
+Keep the repo structured. If new information comes in that does not fit into the existing structure, it needs to be expanded/updated. Confirm your intention with the user in this case before proceeding.
