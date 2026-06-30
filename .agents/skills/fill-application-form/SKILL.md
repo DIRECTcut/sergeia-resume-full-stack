@@ -37,6 +37,18 @@ Then read the most relevant resume artifact:
 - full-stack roles: `resumes/Sergei_Afonchenko_Senior_Full_Stack_Developer.pdf` or `.docx`
 - backend-heavy roles: `resumes/Sergei_Afonchenko_Backend_Developer.pdf` or `.docx`
 
+For repeat runs, prefer the cached extractor helper before manually parsing the resume:
+
+```bash
+bash .agents/skills/fill-application-form/scripts/extract_resume_context.sh resumes/Sergei_Afonchenko_Senior_Full_Stack_Developer.docx
+```
+
+The helper:
+
+- normalizes the `.docx` into plain text
+- caches the output in `tmp/application-forms/.cache/`
+- appends basic timing data and cache-hit status to `tmp/application-forms/.cache/extraction.log.tsv`
+
 If needed, inspect `resumes/invisible_tag_cloud.txt` for keyword coverage that is already supported by the repo.
 
 ## Link Handling
@@ -93,6 +105,7 @@ Pass the final content on stdin. The script will:
 - create `tmp/application-forms/` if needed
 - normalize the base name into a safe slug
 - force the `.txt` extension
+- insert a top-level warning if the draft contains tentative markers such as `Needs user confirmation`
 - print the saved file path
 
 Choose a descriptive base name, usually `company-role` when that can be inferred.
